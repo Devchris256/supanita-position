@@ -251,3 +251,51 @@ section>*:not(:last-child) {
   font-weight: bold;
   text-decoration: 0;
 }
+
+@media screen and (max-width:1120px){
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  /* ||HEADER STYLE */
+  .header {
+    position: static;
+    padding-inline: 1.6rem;
+    margin: auto;
+  }
+
+  .nav {
+    inline-size: 100%;
+    position: static;
+  }
+
+  .opcions {
+    inline-size: 100%;
+    outline: auto;
+    position: static;
+    text-align: center;
+  }
+
+  /* ||MAIN STYLE*/
+
+  .wrapper {
+    max-inline-size: 100%;
+    margin-inline-start: 0;
+    padding-inline: 1.6rem;
+    margin: auto;
+  }
+
+  .productos img {
+    max-inline-size: 100%;
+  }
+
+  .productos figcaption {
+    font-size: 1.6rem;
+  }
+
+}
