@@ -276,7 +276,6 @@ section>*:not(:last-child) {
 
   .opcions {
     inline-size: 100%;
-    outline: auto;
     position: static;
     text-align: center;
   }
