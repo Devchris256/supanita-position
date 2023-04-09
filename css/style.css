@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --font: 'Inter', sans-serif;
+  --gree-forte: #05E92E;
+  --white: #F5F5F5;
+  --green: #7ABF01;
+  --white10: #EDEDED;
+  --gren-opacy: rgba(196, 245, 205, 0.5);
+  --gray: #525151;
+}
+
+/* ||GENERAL STYLE */
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--white);
+}
+
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 7.2rem;
+  line-height: 8rem;
+  color: var(--white10);
+}
+
+h2 {
+  font-size: 6.4rem;
+  line-height: 7.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+}
+
+section {
+  padding: 1.6rem;
+}
+
+section>*:not(:last-child) {
+  margin-block-end: 3.2rem;
+}
+
+/* ||HERO STYLE */
+
+.hero {
+  block-size: 6rem;
+  background: var(--gree-forte);
+  text-align: center;
+  margin-block-end: 4rem;
+}
+
+.hero img {
+  block-size: inherit;
+}
+
+/* ||HEADER STYLE */
+
+.header {
+  position: sticky;
+  inset-block-start: 5rem;
+}
+
+.nav {
+  inline-size: 28.5rem;
+  position: relative;
+}
+
+.opcions {
+  inline-size: 18rem;
+  position: absolute;
+  inset-inline-start: 8rem;
+}
+
+.opcions a {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  color: var(--gree-forte);
+  text-decoration: 0;
+  text-transform: uppercase;
+  margin-block: 2.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.opcions a:hover {
+  background-color: var(--gree-forte);
+  color: var(--white10);
+}
+
+/* ||MAIN STYLE*/
+
+.wrapper {
+  max-inline-size: 92.2rem;
+  margin-inline-start: 36.4rem;
+}
+
+.main-content > * {
+  margin-block-end: 3.2rem;
+}
+
+/* ||inicio section */
+.inicio h1 {
+  padding-block: 8.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0.5rem 0.5rem 1.2rem black;
+  background: url(../img/background-tuna.jpg) center/cover;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  border-radius: 0.8rem;
+}
+
+.inicio p {
+  font-weight: bold;
+  color: var(--gray);
+}
+
+/* ||nosotros section */
+
+.nosotros {
+  background: var(--gree-forte);
+  color: var(--white);
+}
+
+.nosotros span {
+  border-block-end: var(--white) solid 0.4rem;
+}
+
+.descripcion p+p:not(:last-of-type){
+  margin-block-end: 1.6rem;
+}
+
+/* ||productos section */
+
+.productos {
+  background: var(--white10);
+}
+
+.productos h2::after {
+  content: ':';
+}
+
+.productos figure {
+  text-align: center;
+}
+
+.productos figcaption {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+/* ||recicla section */
+
+.recicla h3 {
+  text-transform: uppercase;
+}
+
+.slider-container {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  font-size: 0;
+}
+
+.slider-page {
+  display: inline-block;
+  inline-size: 100%;
+}
+
+.video {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  block-size: auto;
+  border: 0;
+}
+
+.bull-list {
+  text-align: center;
+}
+
+.list {
+  background: var(--gren-opacy);
+  display: inline-block;
+  inline-size: 1.6rem;
+  block-size: 1.6rem;
+  margin: 1.6rem 0.4rem 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.list:hover {
+  background: var(--gree-forte);
+}
+
+/* ||FOOTER STYLE */
+.footer {
+  background: var(--gree-forte);
+  padding: 1.6rem 8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer div:first-of-type {
+  margin-block-end: 1.6rem;
+}
+
+.logo {
+  block-size: 4rem;
+}
+
+.logo img {
+  block-size: inherit;
+}
+
+.redes a {
+  color: var(--white);
+  margin-inline: 0.4rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: bold;
+  text-decoration: 0;
+}
